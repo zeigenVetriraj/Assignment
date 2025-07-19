@@ -1,6 +1,6 @@
 
 //1. Write a code to illustrate the various scope of variables(static, local, instance, block, final variables)?
-public class Question1 {
+public class Scope {
     final double PI = 3.14159;         // Final instance variable
     static String place = "Alangulam"; // Static variable
     String answer = "Yes";             // Instance variable
