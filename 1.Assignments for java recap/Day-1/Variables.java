@@ -1,5 +1,5 @@
 //2. Write a program in which, declare all data types like integer, double, float, long integer, character and byte data and print them.
-public class Question2 {
+public class Variables {
     
     public static void main(String[] args) {
         int intVariable = 10; // integer variable (4byte)
