@@ -12,9 +12,14 @@ public class EqualOperator {
         int num2 = sc.nextInt();
         
         // Using equals (==) operator
-        boolean equal = num1 == num2;
+        int equal = num1 - num2;
 
-        if(equal)System.out.println("The two numbers is equal");
-        else System.out.println("The two numbers is not equal");
+        switch(equal){
+            case 0:System.out.println("The two numbers is equal");
+            break;
+            default: System.out.println("The two numbers is not equal");
+            break;
+        }
+        
     }
 }
