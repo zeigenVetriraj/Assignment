@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //4. Write a program to check whether the given two numbers are equal or not w/o using comparison operator?
-public class Question4 {
+public class EqualOperator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
