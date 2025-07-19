@@ -15,12 +15,23 @@ public class TypeCasting {
         int chVal = (int) ch; // give the ASCI value fo 'A'
         System.out.println("Explicitly Type casted (char to int): " + chVal);
 
-        Animal a = new Dog(); // upcasting
-        if (a instanceof Dog) {
-            Dog d = (Dog) a; // Safe downcast
+        // Reference type casting: upcasting and safe downcasting
+        Animal animal = new Dog(); // Upcasting (implicit)
+        if (animal instanceof Dog) {
+            Dog dog = (Dog) animal; // Downcasting (explicit)
+            System.out.println("Successfully downcasted Animal to Dog.");
         }
+
+        // int to byte — causes overflow
+        int bigNumber = 130;
+        byte b = (byte) bigNumber;  // -126 due to overflow
+        System.out.println("Explicitly Type casted (int to byte with overflow): " + b);
     }
 }
 
-class Animal {}
-class Dog extends Animal {}
+class Animal {
+    // statements
+}
+class Dog extends Animal {
+    // statements
+}
