@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //3. Write a program to find the maximum of two numbers using ternary operator.
-public class Question3 {
+public class Ternary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
