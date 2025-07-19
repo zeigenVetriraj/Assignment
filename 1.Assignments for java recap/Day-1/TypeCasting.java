@@ -1,22 +1,21 @@
-import java.util.Scanner;
 
 //6. Write a program that illustrate the Explicit type casting?
 public class TypeCasting {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         
-        System.out.print("Enter the first Number : " );
-        int num1 = sc.nextInt();
-        
-        System.out.print("Enter the second Number : " );
-        int num2 = sc.nextInt();
-        
-        // type cast to Double
-        double val = (double)num1 / num2;
-        System.out.println("Type casted : "+val);
+        double val = (double) 12 / 5; // when dividing 2 int's if the output has desimal value we have to consider
+        System.out.println("Explicitly Type casted (int to double): " + val);
 
-        String str = new StringBuilder();
-        StringBuilder sb = (StirngBuilder) str;
-      
+        // double to int explicit type casting
+        double d = 9.87;
+        int i = (int) d; // fractional part lost
+        System.out.println("Explicitly Type casted (double to int): " + i);
+
+        // Valid casting from char to int
+        char ch = 'A';
+        int chVal = (int) ch; // give the ASCI value fo 'A'
+        System.out.println("Explicitly Type casted (char to int): " + chVal); 
+
+        
     }
 }
