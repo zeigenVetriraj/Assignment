@@ -13,16 +13,47 @@ public class Grade{
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Enter the Number : ");
+        System.out.print("Enter the Percentage: ");
         int percent = sc.nextInt();
 
-        if(percent>=85 && percent<=100)System.out.println("Grade A");
-        else if(percent>=70 && percent<85)System.out.println("Grade B");
-        else if(percent>=50 && percent<70)System.out.println("Grade C");
-        else if(percent>=0 && percent<50)System.out.println("Grade B");
-        else System.out.println("You'r Not Elegible");
+        // First Method: Using if-else
+        System.out.print("Using if-else: ");
+        if (percent >= 85 && percent <= 100) {
+            System.out.println("Grade A");
+        } else if (percent >= 70) {
+            System.out.println("Grade B");
+        } else if (percent >= 50) {
+            System.out.println("Grade C");
+        } else if (percent >= 0) {
+            System.out.println("Fail");
+        } else {
+            System.out.println("Invalid Input");
+        }
 
-        switch(subject){
-            case 
+        // Second Method: Using switch-case (approximate using percent / 10)
+        System.out.print("Using switch-case: ");
+        switch (percent / 10) {
+            case 10:
+            case 9:
+            case 8:
+                System.out.println("Grade A");
+                break;
+            case 7:
+                System.out.println("Grade B");
+                break;
+            case 6:
+            case 5:
+                System.out.println("Grade C");
+                break;
+            case 4:
+            case 3:
+            case 2:
+            case 1:
+            case 0:
+                System.out.println("Fail");
+                break;
+            default:
+                System.out.println("Invalid Input");
         }
         
         
